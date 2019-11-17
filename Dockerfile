@@ -21,6 +21,7 @@ COPY src /app
 # add configs and scripts
 ADD conf/supervisord.conf /etc/supervisord.conf
 ADD scripts/start.sh /start.sh
+RUN chmod 755 /start.sh
 
 EXPOSE 5000 2222
 
