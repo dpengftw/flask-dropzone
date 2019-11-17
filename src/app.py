@@ -17,8 +17,7 @@ app = Flask(__name__)
 app.config.update(
     UPLOADED_PATH=os.path.join(basedir, 'uploads'),
     # Flask-Dropzone config:
-    DROPZONE_ALLOWED_FILE_TYPE='image',
-    DROPZONE_MAX_FILE_SIZE=3,
+    DROPZONE_MAX_FILE_SIZE=30,
     DROPZONE_MAX_FILES=30,
     DROPZONE_PARALLEL_UPLOADS=3,  # set parallel amount
     DROPZONE_UPLOAD_MULTIPLE=True,  # enable upload multiple
@@ -37,4 +36,4 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run()

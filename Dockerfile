@@ -16,11 +16,12 @@ echo "root:Docker!" | /usr/sbin/chpasswd
 
 # install dropzone
 RUN pip install flask Flask-Dropzone
+COPY src /app
 
 # add configs and scripts
 ADD conf/supervisord.conf /etc/supervisord.conf
 ADD scripts/start.sh /start.sh
 
-EXPOSE 5000
+EXPOSE 5000 2222
 
 CMD ["/start.sh"]
