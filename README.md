@@ -38,7 +38,7 @@ docker run -itd --rm --name flask-dropzone -p 5000:5000 \
 
 ## Usage
 
-Open http://docker IP:5000, and drag and drop any file onto the HTTP upload zone.  Files will be uploaded
+Open [ http://docker IP:5000](https://localhost:5000), and drag and drop any file onto the HTTP upload zone.  Files will be uploaded
 and placed in /app/uploads.
 
 ## Contributing
