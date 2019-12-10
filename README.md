@@ -25,7 +25,9 @@ docker run -itd --rm --name flask-dropzone -p 5000:5000 -v /tmp:/app/uploads fla
 |SSH_KEY           |SSH key in base64 encoded|
 |GIT_USERNAME      |Username of the Git user |
 |GIT_PERSONAL_TOKEN|Git token to access repo |
-
+|DROPZONE_ALLOWED_FILE_TYPE|default, image, audio, video, text, app|
+|DROPZONE_MAX_FILE_SIZE|Max allowed file size. unit: MB|
+|DROPZONE_PARALLEL_UPLOADS|How many uploads will handled in per request when DROPZONE_UPLOAD_MULTIPLE set to True.|
 ## Custom Git Repo Deployment
 
 ```
